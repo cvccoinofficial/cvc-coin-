@@ -1,0 +1,6 @@
+{
+  "name": "ART Mining - Telegram WebApp",
+  "description": "ART Coin crypto mining Telegram Mini App featuring automated mining cycles, tasks & partner rewards, miner upgrades, referral squad, and TON wallet integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

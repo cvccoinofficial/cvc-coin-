@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Space Grotesk', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #050509;
+    color: white;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
+  }
+}
+
+/* Luxury Gold Glow Effects */
+.glow-gold {
+  box-shadow: 0 0 30px rgba(232, 185, 74, 0.45);
+}
+
+.glow-gold-ring {
+  filter: drop-shadow(0 0 14px rgba(232, 185, 74, 0.9)) drop-shadow(0 0 24px rgba(255, 216, 107, 0.6));
+}
+
+.glow-gold-button {
+  box-shadow: 0 0 25px rgba(232, 185, 74, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.inner-shadow {
+  box-shadow: inset 0 0 20px rgba(232, 185, 74, 0.25);
+}
+
+.inner-shadow-gold {
+  box-shadow: inset 0 0 20px rgba(232, 185, 74, 0.2);
+}
+
+/* Gold CashView Club theme styles from snippet */
+.gold-text {
+  background: linear-gradient(180deg, #FFD86B, #E8B94A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-btn {
+  background: linear-gradient(180deg, #FFD86B, #E8B94A);
+  box-shadow: 0 0 25px rgba(232, 185, 74, 0.4);
+}
+
+.coin-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+}
+
+.card-glow {
+  box-shadow: 0 0 30px rgba(232, 185, 74, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin-slow 4s linear infinite;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+/* Hide scrollbars for clean app look */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
